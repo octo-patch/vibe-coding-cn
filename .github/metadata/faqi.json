@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "kind": "faqi-master-classification-register",
-  "reviewed_at": "2026-10-15T00:46:22Z",
+  "reviewed_at": "2026-10-15T02:03:03Z",
   "source_revision": "0a7fdf4ca54d2bb327dcdfc13e816da57ee9c4c2",
   "ontology": {
     "path": ".github/docs/gongfa/cultivation-ontology-taxonomy.md",
@@ -866,6 +866,56 @@
       "sha256": "d57b6e3a44535b9c0ef454dad5c86f5df78185fc80a65c7092885b4b5e10f81b",
       "lines": [263, 275],
       "selection_sha256": "a8130ff1f013777e2c076569f5567924a4a0f3b23df7134ab4b0b99dd1aa86e9"
+    },
+    {
+      "id": "S52",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/README",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "9fb75e6c7f10c25b73e41b8214336d0dc2acfbe4c99984514ccaf7327192d53e",
+      "lines": [84, 88],
+      "selection_sha256": "68980459b47c2af6f48f099a70fa4472b3b6e5066006f7fdf5f63f675dc1f02d"
+    },
+    {
+      "id": "S53",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/compat/explicit_bzero.c",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "7e30bc63946093cd6ed7cb4ce01d2f8c6e329ab173a20df250da60bb0a3c757b",
+      "lines": [1, 6],
+      "selection_sha256": "02fedc95bf0da5dffe09623d9cb71bc7ebbb8bfd31f5e4fb5a23b135d7f36d0e"
+    },
+    {
+      "id": "S54",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/compat/getopt_long.c",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "0486066fe70fb5a81d79971842f171e3bdcb570dbcab22ce51c1394235b8d21f",
+      "lines": [1, 98],
+      "selection_sha256": "32af441d6bffc37dbac1c14d03edf334137d91c95fa06c335479fd9c80d7fcb4"
+    },
+    {
+      "id": "S55",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/xmalloc.c",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "8ed468e9903b8abf18d5d5b76d99f030713fc479d02dc107ec3dbaa3a01c702b",
+      "lines": [1, 15],
+      "selection_sha256": "f28a22fd0a1176583b24e17d8536acaba14afb635f4b253aa9653770cb1449ba"
+    },
+    {
+      "id": "S56",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/logo/LICENSE",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "5fdf604dee98da6f827ea924cf5ae19a9da31555d3814143f2cc6f8e7ee05752",
+      "lines": [1, 14],
+      "selection_sha256": "5fdf604dee98da6f827ea924cf5ae19a9da31555d3814143f2cc6f8e7ee05752"
     }
   ],
   "objects": [
@@ -978,7 +1028,12 @@
       "support": [
         "S20",
         "S40",
-        "S41"
+        "S41",
+        "S52",
+        "S53",
+        "S54",
+        "S55",
+        "S56"
       ],
       "boundary": "指固定源码修订的程序内容，不是物理终端、pane、socket地址或一次会话。Git describe的邻近tag不作为已核发布版本。",
       "declared_version": null
@@ -1123,11 +1178,17 @@
         "S20",
         "S21",
         "S40",
-        "S41"
+        "S41",
+        "S52",
+        "S53",
+        "S54",
+        "S55",
+        "S56"
       ],
       "boundary": "tmux程序与配置、操控封装、终端会话和显示记录分开。",
       "pending": [
-        "S40仅绑定tmux.c文件头许可选区；S41明确COPYING仅供信息参考，代码许可依各文件头（README/CHANGES/FAQ/TODO另述ISC）。尚未逐文件审计固定pin全树、第三方内容与再分发兼容性；limits.license_approved仍为false。"
+        "S40仅绑定tmux.c文件头许可选区；S41明确COPYING仅供信息参考、许可依文件头。2026-10-15第一轮固定pin许可清点见S52–S56；此轮未覆盖全部313文件、非C/H/Y资产、所有上游来源及再分发兼容性，limits.license_approved仍为false。",
+        "2026-10-15：pin 615c27c11789948df2db09e113e882f82dfb3e1c有313个tracked文件、无嵌套gitlink。对196个C/H/Y文件作固定字面扫描：182个含ISC式授权句、13个含BSD式再分发句（compat/daemon-darwin.c与compat/getopt_long.c同时含两种），另有xmalloc.c（S55）/xmalloc.h（sha256 8d0a589c43e16549174b0ffb0b59a8581af00d99eb912205bfb4f293502bbeae）的Tatu Ylonen特殊使用与命名条件、compat/explicit_bzero.c的Public domain声明；BSD式文件为compat/bitstring.h、compat/daemon-darwin.c、compat/daemon.c、compat/getline.c、compat/getopt_long.c、compat/memmem.c、compat/queue.h、compat/strcasestr.c、compat/strsep.c、compat/tree.h、compat/unvis.c、compat/vis.c、compat/vis.h。README (S52)、COPYING (S41) 与 README.ja（sha256 c341a10636227e426a759da4b80b754258ef31f1554a9ac369a79c5afeeadeb6）列举的ISC例外不同；README.ja还列出SYNCING（sha256 5243f70e3adbb2f7554e99889d3ea9b5b719d50108ac127db1392ced65e7c61c），本轮未见该文件头许可声明；FAQ/TODO未跟踪。logo/LICENSE由S56单独绑定。getopt_long.c（S54）自述来源于OpenSSH commit b5b405fee7f3e79d44e2d2971a4b6b4cc53f112e，本轮未独立比对上游。该清点是有限静态检索而非法律兼容性意见；正式许可批准、完整文件级/第三方依赖审查仍未完成。"
       ]
     },
     {
