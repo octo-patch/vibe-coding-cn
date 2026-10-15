@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "kind": "faqi-master-classification-register",
-  "reviewed_at": "2026-10-15T09:08:06Z",
+  "reviewed_at": "2026-10-15T10:55:05Z",
   "source_revision": "0a7fdf4ca54d2bb327dcdfc13e816da57ee9c4c2",
   "ontology": {
     "path": ".github/docs/gongfa/cultivation-ontology-taxonomy.md",
@@ -996,6 +996,16 @@
       "sha256": "f5afbd939a1675b5b1293cd642273d8b0b9555b906683970b5e7a34f802674fd",
       "lines": [1, 20],
       "selection_sha256": "ecbd0ccba3e5665b62c06509dd78ed90525ad60737c63c29d089fb8b54e23b5b"
+    },
+    {
+      "id": "S65",
+      "purpose": "support",
+      "path": ".github/tools/external/.tmux/.logo/LICENSE",
+      "repository": ".github/tools/external/.tmux",
+      "revision": "87dcd13a28aeb5f18baee630e24b3f5765ae3a4f",
+      "sha256": "6ae92da1ac8fc251f218491c42048d258d50d57bc685beb871fb09adf0bcea3e",
+      "lines": [1, 17],
+      "selection_sha256": "6ae92da1ac8fc251f218491c42048d258d50d57bc685beb871fb09adf0bcea3e"
     }
   ],
   "objects": [
@@ -1095,9 +1105,10 @@
         "S19",
         "S37",
         "S38",
-        "S39"
+        "S39",
+        "S65"
       ],
-      "boundary": "配置文件含run、cut|sh调用链及可执行shell指令，按实际程序内容归software-artifact，不能仅因.conf后缀归纯规约；不是tmux本身。",
+      "boundary": "配置文件含run、cut|sh调用链及可执行shell指令，按实际程序内容归software-artifact，不能仅因.conf后缀归纯规约；不是tmux本身。仓内.logo许可证另由S65绑定；其指向可变tmux/master路径，具体SVG来源关系与许可覆盖范围未核，不能据此批准仓库整体再分发。",
       "declared_version": null
     },
     {
