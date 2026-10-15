@@ -149,7 +149,7 @@ class FaqiCatalogTest(unittest.TestCase):
             aliases[".github/skills/auto-tmux/assets/oh-my-tmux"]["related_object_id"],
         ))
 
-    def test_license_documents_are_support_sources_only(self):
+    def test_license_evidence_sources_are_support_only(self):
         data = json.loads((ROOT / ".github/metadata/faqi.json").read_text(encoding="utf-8"))
         implementation = next(source for source in data["sources"] if source["id"] == "S18")
         relative_path = Path(".github/tools/external/.tmux/LICENSE.MIT")
@@ -180,6 +180,31 @@ class FaqiCatalogTest(unittest.TestCase):
 
         license_source["purpose"] = "implementation"
         result = self.invoke("license-document-as-implementation", "--input", self.input_copy("license-implementation", data), "--check")
+        self.assertNotEqual(0, result.returncode)
+        self.assertIn("来源不是公开代码、配置或说明", result.stderr.decode())
+
+        support_only_sources = ("S57", "S58", "S61", "S62", "S63", "S64")
+        for source_id in ("S57", "S58", "S59", "S60", "S61", "S62", "S63", "S64"):
+            data = json.loads((ROOT / ".github/metadata/faqi.json").read_text(encoding="utf-8"))
+            source = next(item for item in data["sources"] if item["id"] == source_id)
+            self.assertEqual("support", source["purpose"])
+            if source_id not in support_only_sources:
+                continue
+            source["purpose"] = "implementation"
+            result = self.invoke(
+                f"{source_id.lower()}-notice-as-implementation",
+                "--input", self.input_copy(f"{source_id.lower()}-implementation", data), "--check",
+            )
+            self.assertNotEqual(0, result.returncode)
+            self.assertIn("来源不是公开代码、配置或说明", result.stderr.decode())
+
+        data = json.loads((ROOT / ".github/metadata/faqi.json").read_text(encoding="utf-8"))
+        unsupported_image = next(item for item in data["sources"] if item["id"] == "S64")
+        unsupported_image["path"] = ".github/tools/external/tmux/logo/icons/128x128/tmux.png"
+        result = self.invoke(
+            "unsupported-image-as-notice-source",
+            "--input", self.input_copy("unsupported-image", data), "--check",
+        )
         self.assertNotEqual(0, result.returncode)
         self.assertIn("来源不是公开代码、配置或说明", result.stderr.decode())
 

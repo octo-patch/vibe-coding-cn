@@ -185,7 +185,14 @@ def validate(root, input_path):
         source_type_allowed = (
             path.suffix in {".py", ".sh", ".c", ".lua", ".html", ".md", ".toml", ".conf"}
             or path.name == "README"
-            or (source["purpose"] == "support" and license_document is not None)
+            or (
+                source["purpose"] == "support"
+                and (
+                    license_document is not None
+                    or path.suffix in {".awk", ".1", ".eps"}
+                    or path.name == "README.ja"
+                )
+            )
         )
         require(source_type_allowed, "来源不是公开代码、配置或说明")
         repository = root if source["repository"] == "." else safe_path(root, source["repository"])

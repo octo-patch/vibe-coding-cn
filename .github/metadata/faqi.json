@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "kind": "faqi-master-classification-register",
-  "reviewed_at": "2026-10-15T02:03:03Z",
+  "reviewed_at": "2026-10-15T09:08:06Z",
   "source_revision": "0a7fdf4ca54d2bb327dcdfc13e816da57ee9c4c2",
   "ontology": {
     "path": ".github/docs/gongfa/cultivation-ontology-taxonomy.md",
@@ -916,6 +916,86 @@
       "sha256": "5fdf604dee98da6f827ea924cf5ae19a9da31555d3814143f2cc6f8e7ee05752",
       "lines": [1, 14],
       "selection_sha256": "5fdf604dee98da6f827ea924cf5ae19a9da31555d3814143f2cc6f8e7ee05752"
+    },
+    {
+      "id": "S57",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/mdoc2man.awk",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "602f3d31ffec414850e697b73f1885e967698ac0cbe8f09efd14800e55abe7ea",
+      "lines": [1, 23],
+      "selection_sha256": "1d4514630b480519684226c19c6ead79afcc30d0a5857601aa2e40b3831f7b92"
+    },
+    {
+      "id": "S58",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/tmux.1",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "f2966da7a8267abc9aaa216a7a7b46d4d914d60114058dc046c4ff1c75ac9422",
+      "lines": [1, 15],
+      "selection_sha256": "04972c3c428ff5c92813b5cc03ee0aca9fb4d67f9efcadc6b08ba9ae9ad1a6db"
+    },
+    {
+      "id": "S59",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/example_tmux.conf",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "0ab7c28342180d485434c3d8e286508a1e1c87ac9a2c8f2dc78bcf477a2de437",
+      "lines": [1, 5],
+      "selection_sha256": "c29f86d0a16523c1ec7df3be70be2c1b0c7c60aa5da95abb23ff3239289beb78"
+    },
+    {
+      "id": "S60",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/tools/24-bit-color.sh",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "cee34d321461577c2455573ec58537833f5968cebe7df8d53aabf08b0e0d9ccf",
+      "lines": [1, 15],
+      "selection_sha256": "d78c7405e325b792164f733359cfb3339460776aaee44586bddb7d221c15f354"
+    },
+    {
+      "id": "S61",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/README.ja",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "c341a10636227e426a759da4b80b754258ef31f1554a9ac369a79c5afeeadeb6",
+      "lines": [59, 60],
+      "selection_sha256": "63f1ffb13bd10f6b3a2052d09b4d9c336c41c45262363e035e25a362ffd5c73a"
+    },
+    {
+      "id": "S62",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/logo/tmux-logo-1-color.eps",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "f4da0cd411ea21140efbb3ebd5fc9a76c87183c8eceb7902e6f08d061c17235b",
+      "lines": [1, 20],
+      "selection_sha256": "2c23a57c4e1dfdf7fdf3d45d0d4cb092413835ab36eb320a3cc25d80b393f0d4"
+    },
+    {
+      "id": "S63",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/logo/tmux-logo.eps",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "13ecb5c04f2b40f5dca7dc7e9be3986de3d7641c6494cc3f139669a3e90dd144",
+      "lines": [1, 20],
+      "selection_sha256": "2c23a57c4e1dfdf7fdf3d45d0d4cb092413835ab36eb320a3cc25d80b393f0d4"
+    },
+    {
+      "id": "S64",
+      "purpose": "support",
+      "path": ".github/tools/external/tmux/logo/tmux-logomark.eps",
+      "repository": ".github/tools/external/tmux",
+      "revision": "615c27c11789948df2db09e113e882f82dfb3e1c",
+      "sha256": "f5afbd939a1675b5b1293cd642273d8b0b9555b906683970b5e7a34f802674fd",
+      "lines": [1, 20],
+      "selection_sha256": "ecbd0ccba3e5665b62c06509dd78ed90525ad60737c63c29d089fb8b54e23b5b"
     }
   ],
   "objects": [
@@ -1033,7 +1113,15 @@
         "S53",
         "S54",
         "S55",
-        "S56"
+        "S56",
+        "S57",
+        "S58",
+        "S59",
+        "S60",
+        "S61",
+        "S62",
+        "S63",
+        "S64"
       ],
       "boundary": "指固定源码修订的程序内容，不是物理终端、pane、socket地址或一次会话。Git describe的邻近tag不作为已核发布版本。",
       "declared_version": null
@@ -1183,12 +1271,21 @@
         "S53",
         "S54",
         "S55",
-        "S56"
+        "S56",
+        "S57",
+        "S58",
+        "S59",
+        "S60",
+        "S61",
+        "S62",
+        "S63",
+        "S64"
       ],
       "boundary": "tmux程序与配置、操控封装、终端会话和显示记录分开。",
       "pending": [
         "S40仅绑定tmux.c文件头许可选区；S41明确COPYING仅供信息参考、许可依文件头。2026-10-15第一轮固定pin许可清点见S52–S56；此轮未覆盖全部313文件、非C/H/Y资产、所有上游来源及再分发兼容性，limits.license_approved仍为false。",
-        "2026-10-15：pin 615c27c11789948df2db09e113e882f82dfb3e1c有313个tracked文件、无嵌套gitlink。对196个C/H/Y文件作固定字面扫描：182个含ISC式授权句、13个含BSD式再分发句（compat/daemon-darwin.c与compat/getopt_long.c同时含两种），另有xmalloc.c（S55）/xmalloc.h（sha256 8d0a589c43e16549174b0ffb0b59a8581af00d99eb912205bfb4f293502bbeae）的Tatu Ylonen特殊使用与命名条件、compat/explicit_bzero.c的Public domain声明；BSD式文件为compat/bitstring.h、compat/daemon-darwin.c、compat/daemon.c、compat/getline.c、compat/getopt_long.c、compat/memmem.c、compat/queue.h、compat/strcasestr.c、compat/strsep.c、compat/tree.h、compat/unvis.c、compat/vis.c、compat/vis.h。README (S52)、COPYING (S41) 与 README.ja（sha256 c341a10636227e426a759da4b80b754258ef31f1554a9ac369a79c5afeeadeb6）列举的ISC例外不同；README.ja还列出SYNCING（sha256 5243f70e3adbb2f7554e99889d3ea9b5b719d50108ac127db1392ced65e7c61c），本轮未见该文件头许可声明；FAQ/TODO未跟踪。logo/LICENSE由S56单独绑定。getopt_long.c（S54）自述来源于OpenSSH commit b5b405fee7f3e79d44e2d2971a4b6b4cc53f112e，本轮未独立比对上游。该清点是有限静态检索而非法律兼容性意见；正式许可批准、完整文件级/第三方依赖审查仍未完成。"
+        "2026-10-15：pin 615c27c11789948df2db09e113e882f82dfb3e1c有313个tracked文件、无嵌套gitlink。对196个C/H/Y文件作固定字面扫描：182个含ISC式授权句、13个含BSD式再分发句（compat/daemon-darwin.c与compat/getopt_long.c同时含两种），另有xmalloc.c（S55）/xmalloc.h（sha256 8d0a589c43e16549174b0ffb0b59a8581af00d99eb912205bfb4f293502bbeae）的Tatu Ylonen特殊使用与命名条件、compat/explicit_bzero.c的Public domain声明；BSD式文件为compat/bitstring.h、compat/daemon-darwin.c、compat/daemon.c、compat/getline.c、compat/getopt_long.c、compat/memmem.c、compat/queue.h、compat/strcasestr.c、compat/strsep.c、compat/tree.h、compat/unvis.c、compat/vis.c、compat/vis.h。README (S52)、COPYING (S41) 与 README.ja（sha256 c341a10636227e426a759da4b80b754258ef31f1554a9ac369a79c5afeeadeb6）列举的ISC例外不同；README.ja还列出SYNCING（sha256 5243f70e3adbb2f7554e99889d3ea9b5b719d50108ac127db1392ced65e7c61c），本轮未见该文件头许可声明；FAQ/TODO未跟踪。logo/LICENSE由S56单独绑定。getopt_long.c（S54）自述来源于OpenSSH commit b5b405fee7f3e79d44e2d2971a4b6b4cc53f112e，本轮未独立比对上游。该清点是有限静态检索而非法律兼容性意见；正式许可批准、完整文件级/第三方依赖审查仍未完成。",
+        "2026-10-15第二轮固定pin非C/H/Y许可线索见S57–S64：仅审117个非C/H/Y tracked文件中的8个选区。mdoc2man.awk与tmux.1含逐文件版权、permission及免责声明；example_tmux.conf由作者声明Public domain；tools/24-bit-color.sh标注来源为iTerm2的master并称“presumably covered”于其LICENSE，未冻结或核对上游修订/条款；README.ja:59将本文件、CHANGES、FAQ、SYNCING、TODO列为ISC许可对象，与英文COPYING/README的列举不同；三个EPS文件头各自声明Apple 2000–2004 Copyright/All Rights Reserved，未证实logo/LICENSE是否覆盖。未审其余非C/H/Y文件、其他二进制资产及第三方依赖；不构成完整文件/权利/再分发兼容性审查，limits.license_approved仍为false。"
       ]
     },
     {
