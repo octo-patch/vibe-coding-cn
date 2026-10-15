@@ -11,6 +11,7 @@
 - 2026-10-15续审Solve计算机科学pack entries[5..9]：CS2023支持贪心、回溯、分支定界和算法复杂度课程主题，不支持Agent完整操作合同；NIST形式化方法词条仅支持广义定义。贪心需局部选择性质/近似界；回溯和分支定界需明确状态、撤销/剪枝正确性与预算；复杂度需分开渐近分析和token/latency/成本测量；形式化方法与已登记轻量形式化高度相关。未新增登记、候选或评级；快照见[source-selected-computer-science-entries-5-to-9-20261015.txt](source-selected-computer-science-entries-5-to-9-20261015.txt)，不代表556→410全量去重。
 - 2026-10-15完成Solve计算机科学pack entries[10..15]有限复核：STRIPS支持动作前置条件/效果和目标模型，但不证明通用Agent执行；invariant/interface/dependency graph沿用已有历史候选，不复制或升级；memoization与缓存误用约束分开，derived搜索循环只作编辑草图。未改功法登记/候选/总表或评级；快照见[source-selected-computer-science-entries-10-to-15-20261015.txt](source-selected-computer-science-entries-10-to-15-20261015.txt)，不代表全量语义去重。
 - 2026-10-15续审Solve算法pack entries[1..6]：MIT讲义支持有限的近似比、随机算法、DAG拓扑序及在线竞争分析命题；随机重启/尾部置信、通用图建模、运行时并行安全和Agent质量映射仍缺合同。区分MethodSpec、OperatorSpec、MentalModelSpec与derived组合，不新增登记/候选/评级；快照见[source-selected-algorithms-entries-1-to-6-20261015.txt](source-selected-algorithms-entries-1-to-6-20261015.txt)，不代表556→410全量语义去重。
+- 2026-10-15续审Solve机器学习pack entries[0..4]：官方文档支持传统估计器的测试集隔离、k-fold验证和按训练样本数的学习曲线；Agent hidden eval、task-fold评测、reasoning/context/tool-call资源曲线及预算正则化映射仍属未验证跨域类比。与已有实验设计、性能测量等记录相邻，不新增登记、候选ID或评级。有限快照见[source-selected-machine-learning-entries-0-to-4-20261015.txt](source-selected-machine-learning-entries-0-to-4-20261015.txt)，只覆盖五条，不代表556→410全量语义去重。
 - 两批入库初评的原始分布为黄7、玄47、地25、天0；这是修订前历史记录，不代表当前分布，也不是效果实测。
 - 另于2026-10-14冻结Solve机器学习包中的`因果特征消融`来源记录，供因果语义与来源支持复核；两条`source_refs`目前仅有相邻支持，消融结果不自动构成因果证据，不进入登记或总表。
 - 同日冻结`主动学习`来源记录：与通用“信息价值”相关但不完全等同；成本敏感的VOI可成为主动学习的查询策略。原引用未支持完整标签选择循环，补充综述不属于原引用，需新来源修订。本轮不进入登记或总表、不赋级，详见有限选区快照。
@@ -75,6 +76,7 @@ gongfa/
 ├── source-methodology-931f79be.txt          # 指定页面原始HTML快照（惰性文本）
 ├── source-selected-candidates-20261013.txt   # 3项备忘录与3项早期Solve候选的冻结选区及来源指纹
 ├── source-selected-candidates-20261014.txt   # 机器学习包3条OperatorSpec的有限评审选区，不进入总表
+├── source-selected-machine-learning-entries-0-to-4-20261015.txt # 机器学习pack前五条有限来源与语义复核，不进入总表
 ├── source-selected-candidate-causal-feature-ablation-20261014.txt # 因果特征消融来源记录的有限评审选区
 ├── source-selected-candidate-active-learning-20261014.txt # 主动学习来源记录的有限评审选区
 ├── source-selected-candidate-amortized-analysis-20261014.txt # 摊销分析来源记录的有限评审选区
