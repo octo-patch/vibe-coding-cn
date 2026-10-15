@@ -1092,7 +1092,8 @@
       "pending": [
         "2026-10-14：S45–S50绑定固定CLI路由、AgentClient与install/upload静态选区。CLI映射包含create/enhance/package/upload/install/install-agent等；AgentClient的auto模式按环境密钥选择API或本地代理，API路径将prompt发送给provider，本地subprocess.run未显式限制env；Claude预设含--dangerously-skip-permissions，Codex含--full-auto和--skip-git-repo-check。install将auto_upload设为默认true（可用--no-upload），upload路径调用目标adaptor并可从环境变量取key。仅静态审阅，未运行、联网、上传或读取凭据；完整MCP链路、数据范围/来源授权、子进程权限、环境隔离、外部与本地写入及恢复路径仍待审。",
         "仓库LICENSE标注MIT，但版权行保留[Your Name/Username]占位符；权利主体与授权未核，不作许可证批准依据。",
-        "固定pyproject将PyMuPDF>=1.24.14列为核心依赖；2026-10-14本地Python 3.12.3环境未安装PyMuPDF（pip另有~umpy无效发行警告），运行/doctor/PDF路径未验证。这是环境观察，不等于上游实现缺陷。"
+        "固定pyproject将PyMuPDF>=1.24.14列为核心依赖；2026-10-14本地Python 3.12.3环境未安装PyMuPDF（pip另有~umpy无效发行警告），运行/doctor/PDF路径未验证。这是环境观察，不等于上游实现缺陷。",
+        "2026-10-15：在Python 3.12.3环境运行python3 -m pip show PyMuPDF仍显示未安装；未安装依赖、未运行Skill Seekers。运行验证仍为false；此项只是目标环境依赖存在性检查，不是程序测试。"
       ]
     },
     {

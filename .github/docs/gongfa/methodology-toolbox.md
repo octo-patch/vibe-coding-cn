@@ -1362,6 +1362,21 @@ entries[10..15]属于有限选区；本轮不遍历79条登记或410条历史候
 
 五条复用的`evidence_required`清单无法替代各自义务：贪心选择/近似保证、回溯状态树与撤销、分支定界正确界与剪枝证明、复杂度规模/测量口径、形式化规格/模型/验证覆盖均不同。本批只审entries[5..9]及定向既有条目；不覆盖余下entries[10..15]或556→410全量比较，不改登记、候选、总表或评级；来源许可、独立审查和效果仍未验证。
 
+##### 计算机科学Solve pack entries[10..15]有限语义与来源复核
+
+字段范围、来源限制与逐项判断见[冻结快照](../../metadata/gongfa/source-selected-computer-science-entries-10-to-15-20261015.txt)。STRIPS原文支持world model、动作前置条件、增删效果和目标条件，并区分规划operator与实际执行routine；它不保证一般Agent工具行为、全局搜索终止或最优性。NIST词条和OMG Essence分别支持形式化方法概念与方法/实践组合，不构成不变量或API接口的精确操作规范。
+
+| Solve条目 | 对照结果与处理 |
+|---|---|
+| `state-transition-modeling` | 与状态空间思维、状态分类和受约束状态变换相邻但不是同一层；STRIPS不支持通用失败转移、可达性/循环/终止保证，保留窄状态/动作模型边界，不新登记。 |
+| `invariant-checking` | 历史候选已与`gongfa-invariant-constraints`对照；执行路径检查不证明未执行路径安全，沿用历史意见，不重复或升级。 |
+| `interface-contract` | 历史候选与`gongfa-stable-interface-contract`层级相关但不同；Essence是方法/实践语言，不是API合同来源，错误、超时、幂等和版本操作仍待精确来源。 |
+| `cache-memoization` | 与`gongfa-cache-lifecycle-isolation`相邻；区分算法重复子问题复用与Agent跨任务缓存。现有MIT/CS2023课程概述不足以支持缓存键、权限、新鲜度和失效的完整合同。 |
+| `dependency-graph` | 沿用既有候选记录：区别于`gongfa-explicit-dependencies`准则，且与影响分析避免重复；隐藏/时变依赖使图不完备。 |
+| `search-space-control-loop` | 是无固定外部来源的derived组合草图；回溯、分支定界和动态规划不能无条件串接，缺少分支选择与状态/失败恢复合同，不赋予独立身份。 |
+
+本批不修改登记、历史候选或生成总表，不赋级；Computer Science pack entries[0..15]仅完成分段有限审阅，其他pack及556→410全量语义比较未完成，C01–C20也未覆盖。
+
 #### 与现有方法合并，不另建平行流程
 
 | 候选素材 | 处理方式 |
